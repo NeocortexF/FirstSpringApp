@@ -24,18 +24,10 @@ public class App {
         app.logEvent("Some event for 2");
     }
 
-// вместо этого
-//        app.client = new Client("1", "John Smith");
-//        app.eventLogger = new ConsoleEventLogger();
-
-
-
-// это!
-//    public App(Client client, ConsoleEventLogger eventLogger) {
-//        this.client = client;
-//        this.eventLogger = eventLogger;
-//    }
-   // app.logEvent("some event for user 1");
+    public App(Client client, ConsoleEventLogger eventLogger) {
+        this.client = client;
+        this.eventLogger = eventLogger;
+    }
 
     private void logEvent(String msg) {
         String message = msg.replaceAll(
